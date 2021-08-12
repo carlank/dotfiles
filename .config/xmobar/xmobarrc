@@ -1,0 +1,68 @@
+Config {
+
+    -- appearance
+      font                     = "xft:Fira Code Nerd Font Mono:pixelsize=12"
+    -- , bgColor                  = "#232345"
+    -- , fgColor                  = "#70FFFE"
+    -- , alpha                    = 230
+    , position                 = Top
+
+    -- layout
+    , sepChar                  = "%"
+    , alignSep                 = "}{"
+    , template                 = " %StdinReader% }{ cpu %multicpu%  mem %memory%  net %dynnetwork%   %date% "
+
+    -- general behavior
+    , lowerOnStart             = False
+    , hideOnStart              = False
+    , allDesktops              = True
+    , overrideRedirect         = True
+    , pickBroadest             = False
+    , persistent               = True
+
+    -- plugins
+    , commands =
+
+        -- network activity monitor
+        [ Run DynNetwork     [ "--template" , "<tx> <rx>kB/s"
+                             , "--Low"      , "100000"
+                             , "--High"     , "500000"
+                             , "--low"      , "#CCFF7D"
+                             , "--normal"   , "#90E897"
+                             , "--high"     , "#B3FFE5"
+                             --, "-w"         , "3"
+                             ] 10
+
+        -- cpu activity monitor
+        , Run MultiCpu       [ "--template" , "<autototal>%"
+                             , "--Low"      , "30"         -- units: %
+                             , "--High"     , "85"         -- units: %
+                             , "--low"      , "#CCFF7D"
+                             , "--normal"   , "#E8DA4D"
+                             , "--high"     , "#FFBC1E"
+                             --, "-w"         , "2"
+                             ] 10
+
+        -- memory usage monitor
+        , Run Memory         [ "--template" ,"<usedratio>%"
+                             , "--Low"      , "60"        -- units: %
+                             , "--High"     , "90"        -- units: %
+                             , "--low"      , "#CCFF7D"
+                             , "--normal"   , "#E8DA4D"
+                             , "--high"     , "#FFBC1E"
+                             ] 10
+
+        -- time and date indicator 
+        --   (%F = y-m-d date, %a = day of week, %T = h:m:s time)
+        , Run Date           "%A, %B %e, %Y %r %Z" "date" 10
+
+        -- standard input
+        , Run StdinReader
+
+        -- wifi signal
+        , Run Com ".bin/wireless.sh" [] "wifisignal" 10
+
+        -- volume
+        , Run Com ".bin/volume.sh" [] "volume" 10
+        ]
+}
