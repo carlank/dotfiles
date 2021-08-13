@@ -49,5 +49,5 @@ fi
 xmonad &
 # xcompmgr &
 insync start
-# exec xterm
-exec paperview ~/wallpapers/flower_shop 12
+paperview ~/wallpapers/sky_camping/ 12 &
+exec xterm
