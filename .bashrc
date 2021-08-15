@@ -18,3 +18,4 @@ alias aseprite='steam -applaunch 431730'
 PS1='\A \u \W \$ '
 PATH="$HOME/bin:$PATH"
 alias config='/usr/bin/git --git-dir=/home/nsf/.dotfiles/ --work-tree=/home/nsf'
+. "$HOME/.cargo/env"

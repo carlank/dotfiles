@@ -1,20 +1,20 @@
 ! Current xcolor theme: sky_camping
 
 #define COLOR0      #282a2e
-#define COLOR1      #cc241d
+#define COLOR1      #a54242
 #define COLOR2      #4b692f
-#define COLOR3      #d79921
-#define COLOR4      #458588
-#define COLOR5      #b16286
-#define COLOR6      #689d6a
-#define COLOR7      #a89984
-#define COLOR8      #928374
-#define COLOR9      #fb4934
-#define COLOR10     #6abe30
-#define COLOR11     #fabd2f
-#define COLOR12     #83a598
-#define COLOR13     #d3869b
-#define COLOR14     #8ec07c
+#define COLOR3      #986744
+#define COLOR4      #06233b
+#define COLOR5      #64197c
+#define COLOR6      #112e2a
+#define COLOR7      #131920
+#define COLOR8      #373b41
+#define COLOR9      #cc6666
+#define COLOR10     #2d6f00
+#define COLOR11     #e1b052
+#define COLOR12     #003a70
+#define COLOR13     #aa42c9
+#define COLOR14     #ffffff
 #define COLOR15     #2d2d36
 #define FOREGROUND  #45283c
 #define BACKGROUND  #68aed4
