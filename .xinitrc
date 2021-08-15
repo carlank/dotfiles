@@ -48,6 +48,8 @@ fi
 
 xmonad &
 # xcompmgr &
+picom &
 insync start
-paperview ~/wallpapers/sky_camping/ 12 &
+# paperview ~/wallpapers/sky_camping/ 12 &
+xwinwrap -ov -g 1920x1080+0+0 -- mpv -wid WID /home/nsf/wallpapers/sky_camping/sky_camping.gif --no-osc --no-osd-bar --loop-file --player-operation-mode=cplayer --no-audio --panscan=1.0 --no-input-default-bindings &
 exec xterm

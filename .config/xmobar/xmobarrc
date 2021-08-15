@@ -10,7 +10,7 @@ Config {
     -- layout
     , sepChar                  = "%"
     , alignSep                 = "}{"
-    , template                 = " %StdinReader% }{ cpu %multicpu%  mem %memory%  net %dynnetwork%   %date% "
+    , template                 = " %StdinReader% }{ cpu %multicpu%  mem %memory%  %dynnetwork%  %date% "
 
     -- general behavior
     , lowerOnStart             = False
@@ -24,7 +24,7 @@ Config {
     , commands =
 
         -- network activity monitor
-        [ Run DynNetwork     [ "--template" , "<tx> <rx>kB/s"
+        [ Run DynNetwork     [ "--template" , "<tx>↑ <rx>↓"
                              , "--Low"      , "100000"
                              , "--High"     , "500000"
                              , "--low"      , "#CCFF7D"
@@ -34,7 +34,7 @@ Config {
                              ] 10
 
         -- cpu activity monitor
-        , Run MultiCpu       [ "--template" , "<autototal>%"
+        , Run MultiCpu       [ "--template" , "<autototal>"
                              , "--Low"      , "30"         -- units: %
                              , "--High"     , "85"         -- units: %
                              , "--low"      , "#CCFF7D"

@@ -1,21 +1,21 @@
-! Current xcolor theme: espresso
+! Current xcolor theme: sky_camping
 
-#define FOREGROUND   #ffffff
-#define BACKGROUND   #323232
-#define CURSOR       #d6d6d6
-#define COLOR0       #353535
-#define COLOR1       #d25252
-#define COLOR2       #a5c261
-#define COLOR3       #ffc66d
-#define COLOR4       #6c99bb
-#define COLOR5       #d197d9
-#define COLOR6       #bed6ff
-#define COLOR7       #eeeeec
-#define COLOR8       #535353
-#define COLOR9       #f00c0c
-#define COLOR10      #c2e075
-#define COLOR11      #e1e48b
-#define COLOR12      #8ab7d9
-#define COLOR13      #efb5f7
-#define COLOR14      #dcf4ff
-#define COLOR15      #ffffff
+#define COLOR0      #282a2e
+#define COLOR1      #cc241d
+#define COLOR2      #4b692f
+#define COLOR3      #d79921
+#define COLOR4      #458588
+#define COLOR5      #b16286
+#define COLOR6      #689d6a
+#define COLOR7      #a89984
+#define COLOR8      #928374
+#define COLOR9      #fb4934
+#define COLOR10     #6abe30
+#define COLOR11     #fabd2f
+#define COLOR12     #83a598
+#define COLOR13     #d3869b
+#define COLOR14     #8ec07c
+#define COLOR15     #2d2d36
+#define FOREGROUND  #45283c
+#define BACKGROUND  #68aed4
+#define CURSOR      #2d2d36
