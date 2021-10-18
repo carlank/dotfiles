@@ -2,8 +2,8 @@ Config {
 
     -- appearance
       font                     = "xft:Fira Code Nerd Font Mono:pixelsize=12"
-    -- , bgColor                  = "#232345"
-    -- , fgColor                  = "#70FFFE"
+    , bgColor                  = "#232345"
+    , fgColor                  = "#70FFFE"
     -- , alpha                    = 230
     , position                 = Top
 
