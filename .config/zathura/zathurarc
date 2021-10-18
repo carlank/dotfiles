@@ -1,0 +1,6 @@
+set default-fg "#45283c"
+set default-bg "#68aed4"
+set statusbar-fg "#45283c"
+set statusbar-bg "#68aed4"
+set recolor-darkcolor "#45283c"
+set recolor-lightcolor "#68aed4"
